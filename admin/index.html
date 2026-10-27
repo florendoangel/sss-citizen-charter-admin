@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SSS Citizen's Charter</title><meta name="robots" content="noindex,nofollow">
+<style>
+:root{--brand:#16336B;--brand2:#2A5DB0;--tint:#E9EFFB;--line:#E3E8F2;--ink:#1C2A44;--mut:#5B667A;--bg:#F3F5FA;--ok:#1E7A4B;--okbg:#E4F5EC;--warn:#9A6200;--warnbg:#FFF3D6;--bad:#B3261E;--badbg:#FDECEA;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}html,body{margin:0}body{font:15px/1.5 var(--sans);color:var(--ink);background:var(--bg)}
+button,input,select,textarea{font:inherit;color:inherit}[hidden]{display:none!important}
+.app{display:grid;grid-template-columns:272px 1fr;min-height:100vh}
+.side{background:var(--brand);color:#fff;display:flex;flex-direction:column;padding:18px 14px;position:sticky;top:0;height:100vh}
+.brand{display:flex;align-items:center;gap:12px;padding:4px 8px 22px}.brand img{width:46px;height:46px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.28)}
+.brand b{display:block;font-size:1.02rem;line-height:1.2}.brand small{display:block;color:#C9D8F4;font-size:.8rem;margin-top:2px;font-weight:600}
+.nav{display:flex;flex-direction:column;gap:6px}
+.nav button{display:flex;align-items:center;gap:12px;width:100%;padding:12px 14px;border:0;border-radius:12px;background:transparent;color:#DCE7FA;font-weight:600;cursor:pointer;text-align:left}
+.nav button:hover{background:rgba(255,255,255,.08)}.nav button.on{background:rgba(255,255,255,.17);color:#fff}
+.nav svg{flex:none;opacity:.9}.nav .n{margin-left:auto;font-size:.75rem;background:rgba(255,255,255,.16);border-radius:99px;padding:1px 9px}
+.sidefoot{margin-top:auto;border-top:1px solid rgba(255,255,255,.14);padding:14px 8px 0}.sidefoot p{margin:0 0 10px;color:#C9D8F4;font-size:.86rem}
+.sidefoot button{width:100%;padding:11px;border-radius:12px;border:1px solid rgba(255,255,255,.4);background:transparent;color:#fff;font-weight:700;cursor:pointer}
+.sidefoot button:hover{background:rgba(255,255,255,.1)}
+.main{min-width:0}.top{position:sticky;top:0;z-index:6;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 28px;background:rgba(243,245,250,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.top h1{margin:0;font-size:1.25rem}.top .sp{flex:1}
+.pill{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;font-weight:700;padding:5px 12px;border-radius:99px;background:var(--okbg);color:var(--ok)}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}.pill.w{background:var(--warnbg);color:var(--warn)}.pill.b{background:var(--badbg);color:var(--bad)}.pill.g{background:var(--tint);color:var(--mut)}
+.content{padding:24px 28px 60px;max-width:1180px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--brand);background:var(--brand);color:#fff;font-weight:700;border-radius:12px;padding:10px 18px;cursor:pointer;text-decoration:none}
+.btn:hover{background:#0f2652}.btn.s{background:#fff;color:var(--brand);border-color:var(--line)}.btn.s:hover{background:var(--tint)}.btn.d{background:#fff;color:var(--bad);border-color:#F0C4C0}.btn.d:hover{background:var(--badbg)}.btn.sm{padding:6px 12px;font-size:.86rem;border-radius:10px}
+.btn.on-top{background:var(--brand2);border-color:var(--brand2)}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 1px 2px rgba(22,51,107,.04)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:18px}
+.stat{padding:18px 20px}.stat b{display:block;font-size:1.9rem;line-height:1.1;color:var(--brand)}.stat span{color:var(--mut);font-size:.88rem;font-weight:600}
+.panel{padding:22px 24px}.panel h2{margin:0 0 6px;font-size:1.08rem}.panel p{margin:0 0 14px;color:var(--mut)}
+.note{background:var(--tint);border-radius:12px;padding:12px 16px;margin-bottom:16px;color:#23407A}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}.toolbar input,.toolbar select{height:46px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;min-width:0}.toolbar input{flex:1 1 240px}.toolbar select{flex:0 1 280px}
+.tbl{overflow:hidden}.tr{display:grid;grid-template-columns:minmax(0,1fr) 96px 150px 150px;gap:12px;align-items:center;padding:14px 20px;border-top:1px solid var(--line)}
+.tr.h{border-top:0;background:#FAFBFE;color:var(--mut);font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px}
+.tr .t b{display:block;font-weight:700}.tr .t small{color:var(--mut)}
+.tag{display:inline-block;padding:3px 11px;border-radius:99px;font-size:.78rem;font-weight:700;background:var(--okbg);color:var(--ok)}.tag.i{background:#EDE7FB;color:#5B3FA8}.tag.n{background:var(--tint);color:var(--mut)}.tag.y{background:var(--tint);color:var(--brand2)}
+.acts{display:flex;gap:8px;justify-content:flex-end}.more{text-align:center;padding:16px}
+.drow{display:flex;align-items:center;gap:14px;padding:16px 20px;border-left:4px solid var(--brand);border-radius:14px;margin-bottom:12px;cursor:pointer}.drow:hover{background:#FAFBFE}.drow b{flex:1;min-width:0}.cnt{background:var(--tint);color:var(--brand);font-weight:800;font-size:.82rem;border-radius:99px;padding:3px 12px}
+.fl{display:block;font-weight:700;margin:18px 0 6px}.fl:first-child{margin-top:0}.in{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 14px;background:#fff}.in:focus,.toolbar input:focus,.toolbar select:focus{outline:2px solid var(--brand2);outline-offset:1px}textarea.in{min-height:96px;resize:vertical;line-height:1.5}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.hint{color:var(--mut);font-size:.88rem;margin:6px 0 0}.bar{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pdfbox{border:1px dashed #B9C7E6;background:#F7F9FE;border-radius:14px;padding:16px}.pdfrow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.pdfrow .nm{font-weight:700;word-break:break-all}.pdfrow .sz{color:var(--mut);font-size:.88rem}
+.ghead{display:flex;align-items:center;gap:12px;padding:14px 20px;background:#FAFBFE;border-top:1px solid var(--line)}.ghead b{flex:1;min-width:0}.oitem{display:flex;gap:14px;align-items:flex-start;padding:13px 20px;border-top:1px solid var(--line)}.oitem .t{flex:1;min-width:0}.oitem small{color:var(--mut);display:block}
+.fbcard{padding:18px 20px;margin-bottom:14px}.fbcard .top2{display:flex;gap:10px;align-items:center;margin-bottom:10px}.fbcard .top2 input{flex:1;font-weight:700}
+#toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:#12213F;color:#fff;padding:12px 20px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:30;max-width:90vw}
+.gate{min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(180deg,#16336B 0,#2A5DB0 300px,#E9EFFB 300px)}
+.gcard{width:min(440px,100%);background:#fff;border-radius:22px;box-shadow:0 24px 70px rgba(22,51,107,.32);overflow:hidden}
+.gtop{background:linear-gradient(150deg,#16336B,#2A5DB0);color:#fff;text-align:center;padding:34px 24px 38px}.gtop img{width:68px;height:68px;border-radius:15px;box-shadow:0 10px 26px rgba(0,0,0,.28)}
+.gtop small{display:block;margin-top:16px;letter-spacing:.16em;text-transform:uppercase;font-size:.74rem;color:#DCE7FA;font-weight:700}.gtop h2{margin:6px 0 4px;font-size:1.5rem}.gtop p{margin:0;color:#DCE7FA;font-size:.92rem}
+.gform{padding:28px 28px 30px}.pw{position:relative}.pw .in{padding-right:48px}.pw button{position:absolute;right:6px;top:6px;width:36px;height:36px;border:0;background:transparent;cursor:pointer;color:var(--mut)}
+.perr{color:var(--bad);min-height:1.4em;margin:8px 0;font-weight:600}.gform .btn{width:100%;padding:13px}.lockrow{display:flex;gap:6px;justify-content:center;align-items:center;margin-top:14px;color:var(--mut);font-size:.86rem}
+.empty{padding:34px;text-align:center;color:var(--mut)}
+.hero2{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:30px 32px;margin-bottom:18px;border-radius:22px;color:#fff;background:radial-gradient(circle at 92% 8%,rgba(255,255,255,.18) 0,transparent 38%),radial-gradient(circle at 70% 120%,rgba(255,206,86,.28) 0,transparent 42%),linear-gradient(135deg,#16336B 0,#2A5DB0 100%);box-shadow:0 14px 34px rgba(22,51,107,.26);position:relative;overflow:hidden}
+.hero2 .eyebrow{display:inline-block;font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#FFD66B;margin-bottom:8px}.hero2 h2{margin:0 0 6px;font-size:1.9rem;line-height:1.15}.hero2 p{margin:0 0 18px;color:#DCE7FA}
+.hero2 .btn.lt{background:#fff;color:var(--brand);border-color:#fff}.hero2 .btn.lt:hover{background:#EAF0FC}.hero2 .btn.gl{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff}.hero2 .btn.gl:hover{background:rgba(255,255,255,.25)}
+.chip{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:16px;padding:14px 18px;backdrop-filter:blur(4px);min-width:250px}
+.chip small,.lastbig small{display:block;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;opacity:.8}.chip b,.lastbig b{display:block;font-size:1.02rem;word-break:break-all}.chip em,.lastbig em{font-style:normal;font-size:.86rem;opacity:.85}
+.av{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#FFD66B;color:#16336B;font-weight:800;font-size:1.1rem;flex:none}.av.sm{width:34px;height:34px;font-size:.95rem;background:var(--tint);color:var(--brand)}
+.lastbig{display:flex;align-items:center;gap:14px;background:var(--tint);color:var(--brand);border-radius:14px;padding:14px 18px;margin:8px 0 6px}
+.tl{margin-top:8px}.tli{display:flex;gap:14px;align-items:center;padding:12px 2px;border-top:1px solid var(--line)}.tli .t{min-width:0}.tli small{display:block;color:var(--mut)}
+.stat{border-top:4px solid var(--brand2)}.stat.c1{border-top-color:#2EA66B}.stat.c2{border-top-color:#E0A21B}.stat.c3{border-top-color:#7A5BD6}.stat.c4{border-top-color:#E0574F}
+.back{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;color:var(--brand2);font-weight:700;padding:6px 2px;margin:0 0 12px;cursor:pointer;font-size:.95rem}.back:hover{text-decoration:underline}
+.welcome{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:20px 24px;margin-bottom:16px;background:linear-gradient(120deg,#fff 0,#F1F5FD 100%)}.welcome h2{margin:0 0 4px;font-size:1.2rem}.welcome p{margin:0;color:var(--mut);max-width:540px}.qa{display:flex;gap:10px;flex-wrap:wrap}
+input[type=file]{width:100%;font-size:.92rem;color:var(--mut)}input[type=file]::file-selector-button{border:1px solid var(--brand);background:var(--brand);color:#fff;font-weight:700;border-radius:10px;padding:8px 16px;margin-right:12px;cursor:pointer}input[type=file]::file-selector-button:hover{background:#0f2652}
+#toast{display:flex;align-items:center;gap:10px;font-weight:600}#toast .tk{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#2EA66B;color:#fff;font-size:.8rem;flex:none}
+.btn:focus-visible,.nav button:focus-visible,.back:focus-visible,.tab:focus-visible{outline:3px solid #8FB2F0;outline-offset:2px}
+.srow:hover{background:#FAFBFE}.btn.sm{min-height:36px}
+
+@media(max-width:900px){.app{grid-template-columns:1fr}.side{position:static;height:auto;flex-direction:column;padding:12px}.brand{padding-bottom:10px}.nav{flex-direction:row;overflow-x:auto;gap:6px}.nav button{width:auto;white-space:nowrap;padding:10px 14px}.nav .n{display:none}.sidefoot{display:flex;gap:10px;align-items:center;margin-top:10px;padding:10px 4px 0}.sidefoot p{margin:0;flex:1}.sidefoot button{width:auto;padding:8px 16px}.top{padding:12px 16px;position:static}.content{padding:16px 14px 50px}.tr{grid-template-columns:minmax(0,1fr) auto;row-gap:8px}.tr.h{display:none}.tr .c4{display:none}.row2{grid-template-columns:1fr}}
+
+.btn:disabled{opacity:.55;cursor:wait}.cfgbox{background:#FFF3D6;color:#7A4D00;border-radius:12px;padding:12px 14px;margin:0 0 14px;font-size:.92rem}.ok{color:var(--ok);font-weight:600}
+.tabs{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:#fff;border-radius:99px;padding:10px 18px;font-weight:700;color:var(--mut);cursor:pointer;display:inline-flex;gap:8px;align-items:center}.tab .n{background:#EEF1F7;border-radius:99px;padding:1px 9px;font-size:.8rem}.tab.on{background:var(--brand2);border-color:var(--brand2);color:#fff}.tab.on .n{background:rgba(255,255,255,.25);color:#fff}
+details.dep{background:#fff;border:1px solid var(--line);border-left:5px solid var(--brand2);border-radius:16px;margin-bottom:12px;box-shadow:0 1px 2px rgba(22,51,107,.04);overflow:hidden}
+details.dep>summary{cursor:pointer;display:flex;align-items:center;gap:12px;padding:16px 20px;font-weight:700;font-size:1.02rem;list-style:none}details.dep>summary::-webkit-details-marker{display:none}details.dep>summary:hover{background:#FAFBFE}
+details.dep>summary::before{content:"";width:8px;height:8px;border-right:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(-45deg);transition:transform .15s;flex:none}details.dep[open]>summary::before{transform:rotate(45deg)}
+details.dep>summary .c{margin-left:auto;background:var(--tint);color:var(--brand);border-radius:99px;padding:2px 12px;font-size:.85rem;font-weight:800}
+.srow{display:flex;gap:14px;align-items:center;padding:13px 20px;border-top:1px solid var(--line)}.srow .t{flex:1;min-width:0}.srow .t b{display:block;font-weight:600}.srow .t small{color:var(--mut)}.srow .acts{flex:none}
+@media(max-width:700px){.srow{flex-wrap:wrap}}
+</style></head><body>
+<div id="root"></div>
+<img id="logo0" alt="" hidden src="data:image/png;base64,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">
+<script src="config.js"></script>
+<script>
+(function () {
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const E = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const E2 = s => String(s == null ? '' : s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const U = s => String(s).replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&');
+const LOGO = document.getElementById('logo0').src;
+const IC = {
+  dash: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+  dept: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M10 21v-4h4v4"/></svg>',
+  svc: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4a2 2 0 0 1 2-2h12v16H7a2 2 0 0 0-2 2V4Z"/><path d="M5 20a2 2 0 0 0 2 2h12"/></svg>',
+  off: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
+  fb: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.3A8 8 0 1 1 21 12Z"/></svg>',
+  set: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>'
+};
+
+/* ---------- state ---------- */
+let DATA = null, view = 'dash', dirty = false, saveState = 'saved', staleNote = false;
+let W = null, OW = null, sq = '', sd = 'all', stp = 'external', lim = 60, oq = '', og = 'all', wt = 0, tt = 0;
+
+/* ---------- connection to Supabase (settings come from config.js) ---------- */
+/* If config.js is missing or still has the placeholders, use these built-in settings so the page still connects. */
+if (!window.SSS_CONFIG || !window.SSS_CONFIG.SUPABASE_URL || /YOUR[-_ ]/i.test(JSON.stringify(window.SSS_CONFIG))) window.SSS_CONFIG = {
+  SUPABASE_URL: "https://wwvdjfukhccjtpozywfw.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_nUUWXDFDi1H6PjkV017-6A_6V9BOKxI",
+  OPEN_ACCESS: true, AUTO_LIVE: true,
+  ACCESS_PASSWORD_HASH: "b1419f9027c7fe11a7507a5efe2581c8247a8a60677f3aede32efba94d62853e"
+};
+const CFG = window.SSS_CONFIG || {};
+const SB = String(CFG.SUPABASE_URL || '').replace(/\/+$/, ''), KEY = String(CFG.SUPABASE_ANON_KEY || '');
+/* OPEN_ACCESS: true (in config.js) = no login; anyone with the link can edit and publish. Needs open-access.sql. */
+const OPEN = !!(window.SSS_CONFIG && window.SSS_CONFIG.OPEN_ACCESS);
+const AUTO = !!(window.SSS_CONFIG && window.SSS_CONFIG.AUTO_LIVE);
+const PWH = String((window.SSS_CONFIG && window.SSS_CONFIG.ACCESS_PASSWORD_HASH) || '').toLowerCase();
+const sha = async t => { const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(t)); return Array.from(new Uint8Array(d)).map(x => x.toString(16).padStart(2, '0')).join('') };
+let LAST = null, syncTimer = 0, syncing = false, syncAgain = false, liveErr = '';
+const configured = !!(SB && KEY && !/YOUR[-_ ]/i.test(SB + KEY));
+let SESS = null, BASE = null, EMAIL = '', publishing = false;
+const lsGet = k => { try { return localStorage.getItem(k) } catch (e) { return null } };
+const lsSet = (k, v) => { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v) } catch (e) {} };
+function saveSess(s) { SESS = s; lsSet('sssAdminSession', s ? JSON.stringify(s) : null) }
+const AUTHERR = 'auth';
+async function tokenCall(grant, body) {
+  const r = await fetch(SB + '/auth/v1/token?grant_type=' + grant, {method: 'POST', headers: {apikey: KEY, 'Content-Type': 'application/json'}, body: JSON.stringify(body)});
+  const j = await r.json().catch(() => ({}));
+  return {r, j}
+}
+function sessFrom(j, email) { return {access_token: j.access_token, refresh_token: j.refresh_token, expires_at: j.expires_at || Math.floor(Date.now() / 1000) + (j.expires_in || 3600), email: (j.user && j.user.email) || email} }
+async function signIn(email, pw) {
+  const {r, j} = await tokenCall('password', {email, password: pw});
+  if (!r.ok) throw new Error(r.status === 400 || r.status === 401 ? 'Wrong email or password. Please try again.' : (j.error_description || j.msg || 'Could not sign in (' + r.status + ').'));
+  saveSess(sessFrom(j, email)); EMAIL = SESS.email
+}
+async function freshToken() {
+  if (OPEN) return null;
+  if (!SESS) throw new Error(AUTHERR);
+  if (SESS.expires_at - 60 > Date.now() / 1000) return SESS.access_token;
+  const {r, j} = await tokenCall('refresh_token', {refresh_token: SESS.refresh_token});
+  if (!r.ok) { saveSess(null); throw new Error(AUTHERR) }
+  saveSess(sessFrom(j, SESS.email)); return SESS.access_token
+}
+async function api(path, opt) {
+  const t = await freshToken(); opt = opt || {};
+  const r = await fetch(SB + path, Object.assign({}, opt, {headers: Object.assign(t ? {apikey: KEY, Authorization: 'Bearer ' + t} : {apikey: KEY}, opt.headers || {})}));
+  if (r.status === 401 && !OPEN) { saveSess(null); throw new Error(AUTHERR) }
+  return r
+}
+async function fetchPublished() {
+  const r = await fetch(SB + '/rest/v1/site_content?id=eq.1&select=data,updated_at,updated_by', {headers: {apikey: KEY}, cache: 'no-store'});
+  if (!r.ok) throw new Error('Could not load the website content (error ' + r.status + '). Check config.js and that setup.sql was run.');
+  const a = await r.json(); return a[0] || null
+}
+/* Inside each region the offices are listed A-Z. */
+const offSort = (a, b) => a.n.localeCompare(b.n, undefined, {sensitivity: 'base'});
+const REGIONS = ['National Capital Region', 'Luzon', 'Visayas', 'Mindanao', 'Foreign'];
+/* Which of the 5 regions an office group belongs to (also understands the older, more detailed regions). */
+function regionOf(g) {
+  if (g.cat === 'abroad') return 4;
+  const k = REGIONS.indexOf(g.t); if (k >= 0) return k;
+  const t = String(g.t || '');
+  if (/^NCR|National Capital/i.test(t)) return 0;
+  if (/Region (VIII|VII|VI)\b|^NIR|Negros|Visayas/i.test(t)) return 2;
+  if (/Region (XIII|XII|XI|IX|X)\b|BARMM|Mindanao|Caraga|SOCCSKSARGEN/i.test(t)) return 3;
+  return 1
+}
+function regroup(groups) {
+  const out = REGIONS.map((t, i) => ({cat: i === 4 ? 'abroad' : 'local', t, items: []}));
+  (groups || []).forEach(g => { const r = regionOf(g); (g.items || []).forEach(o => out[r].items.push(o)) });
+  out.forEach(g => g.items.sort(offSort));
+  return out
+}
+const EMPTY = () => ({depts: [], items: [], det: [], offices: [], fb: {title: 'Feedback', lead: '', rows: []}, log: []});
+function logChange(a, n, merge) {   /* adds a line to the "Recent changes" list on the Dashboard */
+  if (!Array.isArray(DATA.log)) DATA.log = [];
+  const last = DATA.log[0], now = Date.now();
+  if (merge && last && last.a === a && last.by === (EMAIL || 'open access') && now - Date.parse(last.t) < 600000) { last.t = new Date(now).toISOString(); return }
+  DATA.log.unshift({t: new Date(now).toISOString(), by: EMAIL || 'open access', a, n: String(n || '').slice(0, 140)});
+  DATA.log.length = Math.min(DATA.log.length, 60)
+}
+const nameOf = em => { const b = String(em || '').split('@')[0].replace(/[._\-0-9]+/g, ' ').trim(); return b ? b.replace(/\b\w/g, c => c.toUpperCase()) : 'there' };
+const greet = () => { const h = new Date().getHours(); return h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening' };
+const lastHtml = () => LAST ? '<span class="av">' + E((LAST.by || '?').charAt(0).toUpperCase()) + '</span><span><small>Last edited by</small><b>' + E(LAST.by) + '</b><em>' + E(ago(LAST.at)) + '</em></span>' : '<span><small>Last edited by</small><b>No edits yet</b></span>';
+async function refreshLast() {
+  try { const r = await fetch(SB + '/rest/v1/site_content?id=eq.1&select=updated_at,updated_by', {headers: {apikey: KEY}, cache: 'no-store'}); const a = await r.json(); if (a[0] && a[0].updated_by) LAST = {by: a[0].updated_by, at: a[0].updated_at} } catch (e) {}
+  $$('.lastedit').forEach(el => el.innerHTML = lastHtml())
+}
+const ago = t => { const m = Math.round((Date.now() - Date.parse(t)) / 60000); if (m < 1) return 'just now'; if (m < 60) return m + ' min ago'; const h = Math.round(m / 60); if (h < 24) return h + ' hr ago'; return new Date(t).toLocaleDateString(undefined, {month: 'short', day: 'numeric', year: 'numeric'}) };
+const validData = o => !!(o && Array.isArray(o.depts) && Array.isArray(o.items) && Array.isArray(o.det) && o.items.length === o.det.length && Array.isArray(o.offices) && o.fb && Array.isArray(o.fb.rows));
+const isB64 = s => !!s && !/^(https?:\/\/|pdfs\/|\/)/i.test(s);
+const b64Blob = b => { const bin = atob(b), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new Blob([u], {type: 'application/pdf'}) };
+const slug = s => String(s || 'document').replace(/\.pdf$/i, '').normalize('NFKD').replace(/[^\w]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase().slice(0, 50) || 'document';
+async function uploadPdf(blob, name) {
+  const path = slug(name) + '-' + Math.random().toString(36).slice(2, 10) + '.pdf';
+  const r = await api('/storage/v1/object/pdfs/' + path, {method: 'POST', headers: {'Content-Type': 'application/pdf', 'x-upsert': 'false'}, body: blob});
+  if (!r.ok) throw new Error('Could not upload "' + name + '" (error ' + r.status + '). Is your email listed as an admin in setup.sql?');
+  return SB + '/storage/v1/object/public/pdfs/' + path
+}
+async function loadContent() {
+  const row = await fetchPublished();
+  BASE = row ? row.updated_at : null; LAST = row && row.updated_by ? {by: row.updated_by, at: row.updated_at} : null;
+  const w = await kvGet('work');
+  if (w && w.dirty && validData(w.data) && (!AUTO || w.base === BASE)) { DATA = w.data; dirty = true; staleNote = w.base !== BASE }
+  else { DATA = row && validData(row.data) ? row.data : EMPTY(); dirty = false; staleNote = false; if (w) kvDel('work') }
+  DATA.offices = regroup(DATA.offices); if (!Array.isArray(DATA.log)) DATA.log = []
+}
+async function pushRow(overwrite) {
+  const payload = {version: 1, depts: DATA.depts, items: DATA.items, det: DATA.det, offices: DATA.offices, fb: DATA.fb, log: DATA.log || []};
+  let q = '/rest/v1/site_content?id=eq.1'; if (!overwrite && BASE) q += '&updated_at=eq.' + encodeURIComponent(BASE);
+  const r = await api(q, {method: 'PATCH', headers: {'Content-Type': 'application/json', Prefer: 'return=representation'}, body: JSON.stringify({data: payload, updated_at: new Date().toISOString(), updated_by: EMAIL || 'open access'})});
+  if (!r.ok) throw new Error('Publish failed (error ' + r.status + ').');
+  const a = await r.json();
+  if (a.length) { BASE = a[0].updated_at; LAST = {by: a[0].updated_by || EMAIL || 'open access', at: a[0].updated_at}; $$('.lastedit').forEach(el => el.innerHTML = lastHtml()); return 'ok' }
+  const cur = await fetchPublished();   /* nothing changed: either someone else published first, or this account is not an admin */
+  return cur && cur.updated_at !== BASE ? 'conflict' : 'denied'
+}
+async function publish() {
+  if (publishing) return;
+  if (!DATA.items.length && !confirm('There are no services in this content. Publishing now would empty the public website.\n\nContinue?')) return;
+  if (!confirm('Publish now?\n\nThe public website will change right away for everyone.')) return;
+  publishing = true; status();
+  try {
+    const todo = DATA.det.map((d, i) => i).filter(i => isB64(DATA.det[i].pdf)); let n = 0;
+    for (const i of todo) { toast('Uploading PDF ' + (++n) + ' of ' + todo.length + '…'); DATA.det[i].pdf = await uploadPdf(b64Blob(DATA.det[i].pdf), DATA.det[i].pdfName || DATA.items[i][1]); touch(false) }
+    let res = await pushRow(false);
+    if (res === 'conflict') {
+      if (!confirm('Someone else published a change after you started editing.\n\nOK = publish anyway (their change will be replaced)\nCancel = do not publish')) { publishing = false; status(); return toast('Not published') }
+      res = await pushRow(true)
+    }
+    if (res === 'denied') throw new Error(OPEN ? 'Publishing is not open yet. Run open-access.sql in Supabase.' : 'This account is not allowed to publish. Ask the owner to add your email to the admin list.');
+    dirty = false; staleNote = false; touch(false); toast('Published! The website is updated.')
+  } catch (e) {
+    if (e.message === AUTHERR) { toast('Your session ended. Please sign in again.'); gate() } else toast(e.message || 'Publish failed')
+  }
+  publishing = false; status()
+}
+
+/* ---------- working copy kept in this browser (so nothing is lost before you publish) ---------- */
+const idbOpen = () => new Promise((res, rej) => { const r = indexedDB.open('sssAdmin', 1); r.onupgradeneeded = () => r.result.createObjectStore('kv'); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error) });
+async function kvGet(k) { try { const d = await idbOpen(); return await new Promise((res, rej) => { const q = d.transaction('kv').objectStore('kv').get(k); q.onsuccess = () => res(q.result); q.onerror = () => rej(q.error) }) } catch (e) { return null } }
+async function kvSet(k, v) { const d = await idbOpen(); await new Promise((res, rej) => { const t = d.transaction('kv', 'readwrite'); t.objectStore('kv').put(v, k); t.oncomplete = res; t.onerror = () => rej(t.error); t.onabort = () => rej(t.error) }) }
+async function kvDel(k) { try { const d = await idbOpen(); await new Promise(res => { const t = d.transaction('kv', 'readwrite'); t.objectStore('kv').delete(k); t.oncomplete = res; t.onerror = res }) } catch (e) {} }
+function touch(pub) { if (pub !== false) { dirty = true; if (AUTO) scheduleSync() } saveState = 'saving'; status(); clearTimeout(wt); wt = setTimeout(async () => { try { await kvSet('work', {base: BASE, dirty, data: DATA}); saveState = 'saved' } catch (e) { saveState = 'fail' } status() }, 500) }
+function scheduleSync() { clearTimeout(syncTimer); syncTimer = setTimeout(autoSync, 1200); status() }
+async function autoSync() {
+  if (syncing) { syncAgain = true; return }
+  if (!dirty) return;
+  if (!DATA.items.length) { liveErr = 'Not sent live: there are no services (this would empty the website).'; return status() }
+  syncing = true; liveErr = ''; status();
+  try {
+    const todo = DATA.det.map((d, i) => i).filter(i => isB64(DATA.det[i].pdf));
+    for (const i of todo) { DATA.det[i].pdf = await uploadPdf(b64Blob(DATA.det[i].pdf), DATA.det[i].pdfName || DATA.items[i][1]); touch(false) }
+    let res = await pushRow(false);
+    if (res === 'conflict') res = await pushRow(true);   /* auto mode: last save wins */
+    if (res === 'denied') throw new Error('Live saving is not open yet. Run open-access.sql in Supabase.');
+    if (!syncAgain) { dirty = false; staleNote = false } touch(false)
+  } catch (e) {
+    if (e.message === AUTHERR) { toast('Your session ended. Please sign in again.'); syncing = false; return gate() }
+    liveErr = (e.message || 'Could not send live') + ' — will retry.'; syncAgain = false; syncing = false; status(); clearTimeout(syncTimer); syncTimer = setTimeout(autoSync, 8000); return
+  }
+  syncing = false; status();
+  if (syncAgain) { syncAgain = false; autoSync() }
+}
+function status() {
+  const el = $('#status'), b = $('#pubbtn'); if (b) { if (AUTO) b.hidden = true; else { b.disabled = publishing; b.textContent = publishing ? 'Publishing…' : 'Publish' } }
+  if (!el) return;
+  if (AUTO) { el.innerHTML = liveErr ? '<span class="pill b">' + E(liveErr) + '</span>' : ''; return }   /* shows only when something goes wrong */
+  el.innerHTML = publishing ? '<span class="pill g">Publishing…</span>' : saveState === 'fail' ? '<span class="pill b">Could not save a copy in this browser</span>' : dirty ? '<span class="pill w">Not published yet</span>' : '<span class="pill">Published — website is up to date</span>'
+}
+function toast(m) { let t = $('#toast'); if (!t) { t = document.createElement('div'); t.id = 'toast'; document.body.appendChild(t) } t.innerHTML = '<span class="tk">&#10003;</span>' + E(m); t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 4200) }
+const two = (b, msg, fn) => { if (b.dataset.armed) { clearTimeout(+b.dataset.armed); fn(); return } const o = b.textContent; b.textContent = msg; b.dataset.armed = setTimeout(() => { b.textContent = o; delete b.dataset.armed }, 3000) };
+
+/* ---------- boot + login ---------- */
+async function boot() {
+  if (!configured) return gate();
+  if (OPEN) { EMAIL = lsGet('sssOpenEmail') || ''; if (!EMAIL || (PWH && lsGet('sssOpenOk') !== PWH)) return gate(); try { await enter() } catch (e) { gate(e.message) } return }
+  try { SESS = JSON.parse(lsGet('sssAdminSession') || 'null') } catch (e) { SESS = null }
+  if (!SESS) return gate();
+  try { await freshToken(); EMAIL = SESS.email; await enter() }
+  catch (e) { gate(e.message === AUTHERR ? '' : e.message) }
+}
+async function enter() {
+  $('#root').innerHTML = '<div class="gate"><div class="gcard"><div class="gform" style="text-align:center;padding:50px 28px">Loading…</div></div></div>';
+  await loadContent(); shell();
+  if (staleNote) setTimeout(() => toast('You have unpublished changes from earlier. The website may have changed since — publishing will ask you first.'), 600)
+}
+function gate(msg) {
+  const eye = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>';
+  $('#root').innerHTML = '<div class="gate"><div class="gcard"><div class="gtop"><img src="' + LOGO + '" alt="SSS logo"><small>Social Security System</small><h2>Citizen\'s Charter</h2><p>' + (OPEN ? (PWH ? 'Enter the email and password' : 'Enter your email to continue') : 'Sign in to edit the website') + '</p></div><div class="gform">' +
+    (configured ? '' : '<div class="cfgbox"><b>Not connected yet.</b> Open <b>config.js</b> and fill in your Supabase URL and key (see SETUP-GUIDE.txt).</div>') +
+    '<label class="fl" for="em">Email</label><input class="in" type="email" id="em" autocomplete="username" placeholder="@sss.gov.ph" value="' + E(lsGet('sssAdminEmail') || '') + '">' +
+    (OPEN && !PWH ? '' : '<label class="fl" for="pw" style="margin-top:12px">Password</label><div class="pw"><input class="in" type="password" id="pw" autocomplete="current-password" placeholder="Enter password"><button type="button" id="peye" aria-label="Show password">' + eye + '</button></div>') +
+    '<p class="perr" id="perr">' + E(msg || '') + '</p><button class="btn" id="pgo"' + (configured ? '' : ' disabled') + '>' + (OPEN ? 'Continue' : 'Sign in') + '</button><div class="lockrow">' + (OPEN ? (PWH ? 'Admin access only' : 'Your email is saved with the changes you make') : 'Staff access only') + '</div></div></div></div>';
+  ($('#em').value && $('#pw') ? $('#pw') : $('#em')).focus()
+}
+async function tryLogin() {
+  if (!configured) return;
+  const em = $('#em').value.trim(), er = $('#perr'), b = $('#pgo');
+  if (OPEN) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { er.textContent = 'Please enter a valid email, like name@sss.gov.ph.'; return }
+    if (PWH) {
+      const pw0 = $('#pw').value; if (!pw0) { er.textContent = 'Enter the access password.'; return }
+      let h = ''; try { h = await sha(pw0) } catch (e) { er.textContent = 'Please open this page using https:// (your Netlify link).'; return }
+      if (h !== PWH) { er.textContent = 'Wrong password.'; return }
+      lsSet('sssOpenOk', PWH)
+    }
+    lsSet('sssAdminEmail', em); lsSet('sssOpenEmail', em); EMAIL = em; b.disabled = true;
+    try { await enter() } catch (e) { gate(e.message) }
+    return
+  }
+  const pw = $('#pw').value;
+  if (!em || !pw) { er.textContent = 'Enter your email and password.'; return }
+  b.disabled = true; er.textContent = '';
+  lsSet('sssAdminEmail', em);
+  try { await signIn(em, pw); await enter() }
+  catch (e) { gate(e.message); }
+}
+async function signOut() {
+  if (OPEN) { lsSet('sssOpenEmail', null); lsSet('sssOpenOk', null); EMAIL = ''; W = OW = null; return gate() }
+  try { if (SESS) await fetch(SB + '/auth/v1/logout', {method: 'POST', headers: {apikey: KEY, Authorization: 'Bearer ' + SESS.access_token}}) } catch (e) {}
+  saveSess(null); W = OW = null; gate()
+}
+async function changePw() {
+  const v = $('#npw').value; if (v.length < 8) return toast('Use at least 8 characters');
+  try { const r = await api('/auth/v1/user', {method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({password: v})}); const j = await r.json().catch(() => ({})); if (!r.ok) throw new Error(j.msg || j.error_description || 'Could not change the password'); $('#npw').value = ''; toast('Password changed') }
+  catch (e) { toast(e.message === AUTHERR ? 'Please sign in again' : e.message) }
+}
+
+/* ---------- shell ---------- */
+const TITLES = {dash: 'Dashboard', dept: 'Departments', svc: 'Services', off: 'List of Offices', fb: 'Feedback', set: 'Settings'};
+function shell() {
+  const nav = [['dash', 'Dashboard', ''], ['dept', 'Departments', DATA.depts.length], ['svc', 'Services', DATA.items.length], ['off', 'List of Offices', DATA.offices.reduce((a, g) => a + g.items.length, 0)], ['fb', 'Feedback', '']].concat(location.hash === '#settings' ? [['set', 'Settings', '']] : []);   /* Settings hidden; shows if the site is empty (first-time import) or if the address ends with #settings */
+  $('#root').innerHTML = '<div class="app"><aside class="side"><div class="brand"><img src="' + LOGO + '" alt="SSS logo"><div><b>Social Security System</b><small>Citizen\'s Charter Admin</small></div></div><nav class="nav">' +
+    nav.map(n => '<button data-go="' + n[0] + '" class="' + (view === n[0] ? 'on' : '') + '">' + IC[n[0]] + '<span>' + n[1] + '</span>' + (n[2] !== '' ? '<span class="n">' + n[2] + '</span>' : '') + '</button>').join('') +
+    '</nav><div class="sidefoot"><p>Signed in as ' + E(EMAIL) + '</p><button id="out">Sign out</button></div></aside><main class="main"><div class="top"><h1 id="ttl"></h1><span class="sp"></span><span id="status"></span><button class="btn on-top" data-a="publish" id="pubbtn">Publish</button></div><div class="content" id="page"></div></main></div>';
+  render()
+}
+function go(v) { if (v === 'dash') setTimeout(refreshLast, 50); view = v; W = null; OW = null; $$('.nav button').forEach(b => b.classList.toggle('on', b.dataset.go === v)); render() }
+function counts() { const nav = $$('.nav .n'); const v = [DATA.depts.length, DATA.items.length, DATA.offices.reduce((a, g) => a + g.items.length, 0)]; nav.forEach((n, i) => n.textContent = v[i]) }
+function render() {
+  $('#ttl').textContent = W ? (W.i < 0 ? 'Add a service' : 'Edit service') : OW ? (OW.g < 0 || OW.i < 0 ? 'Add an office' : 'Edit office') : TITLES[view];
+  status(); counts(); window.scrollTo(0, 0);
+  const p = $('#page');
+  if (W) p.innerHTML = svcForm(); else if (OW) p.innerHTML = offForm();
+  else p.innerHTML = ({dash, dept, svc, off, fb, set}[view])()
+}
+
+/* ---------- dashboard ---------- */
+function dash() {
+  const pdf = DATA.det.filter(d => d.pdf).length, noPdf = DATA.items.map((x, i) => i).filter(i => !DATA.det[i].pdf), offs = DATA.offices.reduce((a, g) => a + g.items.length, 0);
+  return (DATA.items.length ? '' : '<div class="note">There is no website content yet. Add services, offices and feedback and they go live automatically.</div>') +
+    '<div class="hero2"><div class="hl"><span class="eyebrow">Citizen\'s Charter</span><h2>' + greet() + ', ' + E(nameOf(EMAIL)) + '!</h2><div style="height:14px"></div><div class="qa"><button class="btn lt" data-a="qsvc" type="button">+ Add service</button><button class="btn gl" data-a="qoff" type="button">+ Add office</button></div></div><div class="lastedit chip">' + lastHtml() + '</div></div>' +
+    '<div class="stats">' + [[DATA.items.length, 'Services'], [pdf, 'With a PDF document'], [noPdf.length, 'Without a PDF'], [DATA.depts.length, 'Departments'], [offs, 'Offices & branches']].map((s, k) => '<div class="card stat c' + k + '"><b>' + s[0] + '</b><span>' + s[1] + '</span></div>').join('') + '</div>' +
+    '<div class="card panel"><h2>Services without a PDF</h2><p>' + (noPdf.length ? 'These still show the full written details. Open one to attach its PDF.' : 'Every service has a PDF document.') + '</p>' +
+    noPdf.slice(0, 8).map(i => '<div class="oitem" style="padding-left:0;padding-right:0"><div class="t"><b>' + E(DATA.items[i][1]) + '</b><small>' + E(DATA.depts[DATA.items[i][0]]) + '</small></div><button class="btn s sm" data-a="svcedit" data-i="' + i + '">Edit</button></div>').join('') +
+    (noPdf.length > 8 ? '<p class="hint" style="margin-top:12px">…and ' + (noPdf.length - 8) + ' more in Services.</p>' : '') + '</div>' +
+    '<div class="card panel" style="margin-top:16px"><h2>Recent changes</h2><div class="lastedit lastbig">' + lastHtml() + '</div>' +
+    ((DATA.log || []).length ? '<div class="tl">' + (DATA.log || []).slice(0, 15).map(l => '<div class="tli"><span class="av sm">' + E((l.by || '?').charAt(0).toUpperCase()) + '</span><div class="t"><b>' + E(l.a) + (l.n ? ': ' + E(l.n) : '') + '</b><small>' + E(l.by) + ' · ' + E(ago(l.t)) + '</small></div></div>').join('') + '</div>' : '') + '</div>'
+}
+
+/* ---------- departments ---------- */
+function dept() {
+  const c = DATA.depts.map(() => 0); DATA.items.forEach(x => c[x[0]]++);
+  return '<div class="toolbar"><button class="btn" data-a="dadd">+ Add department</button></div>' + DATA.depts.map((d, i) =>
+    '<div class="card drow" data-a="dopen" data-i="' + i + '"><b>' + E(d) + '</b><span class="cnt">' + c[i] + '</span><button class="btn s sm" data-a="dren" data-i="' + i + '">Rename</button>' + (c[i] ? '' : '<button class="btn d sm" data-a="ddel" data-i="' + i + '">Delete</button>') + '</div>').join('')
+}
+
+/* ---------- services ---------- */
+function svcRows() {
+  const q = sq.trim().toLowerCase(), r = [];
+  DATA.items.forEach((x, i) => { if (sd !== 'all' && x[0] !== +sd) return; const k = x[5] === 'internal' ? 'internal' : 'external'; if (stp !== 'all' && k !== stp) return; if (q && !(x[1].toLowerCase().includes(q) || DATA.depts[x[0]].toLowerCase().includes(q))) return; r.push(i) });
+  return r
+}
+const CATS = [
+  ['Disability', /disability/i], ['Maternity', /maternity/i], ['Sickness', /sickness/i], ['Death', /\bdeath\b/i], ['Funeral', /funeral/i],
+  ['Retirement & Unemployment', /retirement|unemployment/i], ['Loan', /\bloan\b|OTS|SILP|PFLP/i], ['Contribution', /contribution|PRN|payment|collection/i],
+  ['Coverage', /coverage/i],
+  ['Membership', /membership|MDCR|SS[- ]?[Nn]umber|UMID|My\.?SSS Registration|Registration for (Employer|Member) Account|Resetting of My\.?SSS|Multiple SS Number|Member Records|Member Data Change|Member Account/i],
+  ['Employers', /employer|EDCR|\bR-1\b|R1A/i], ['Pensioners', /pension|ACOP/i]
+];
+const DISPLAY_ORDER = ['Coverage', 'Membership', 'Contribution', 'Loan', 'Sickness', 'Maternity', 'Disability', 'Retirement & Unemployment', 'Funeral', 'Death', 'Employers', 'Pensioners', 'Other Services'];
+const catOf = x => { for (let i = 0; i < CATS.length; i++) if (CATS[i][1].test(x[1])) return i; return CATS.length };
+const openG = new Set();
+function grp(key, name, rows, rowFn, force) {
+  return '<details class="dep" data-k="' + E(key) + '"' + (force || openG.has(key) ? ' open' : '') + '><summary>' + E(name) + '<span class="c">' + rows.length + '</span></summary>' + rows.map(rowFn).join('') + '</details>'
+}
+const svcRow = i => { const x = DATA.items[i], has = !!DATA.det[i].pdf;
+  return '<div class="srow"><div class="t"><b>' + E(x[1]) + '</b><small>' + E(DATA.depts[x[0]]) + '</small></div><span class="tag ' + (has ? 'y' : 'n') + '">' + (has ? 'Has document' : 'No document') + '</span><span class="acts"><button class="btn s sm" data-a="svcedit" data-i="' + i + '">Edit</button><button class="btn d sm" data-a="svcdel" data-i="' + i + '">Delete</button></span></div>' };
+function svcList() {
+  const rows = svcRows(), force = !!sq.trim() || sd !== 'all';
+  if (!rows.length) return '<div class="card empty">No services match.</div>';
+  let h = '';
+  if (stp === 'internal') {
+    [...new Set(rows.map(i => DATA.depts[DATA.items[i][0]]))].sort((a, b) => a.localeCompare(b)).forEach(n => { h += grp('s:' + n, n, rows.filter(i => DATA.depts[DATA.items[i][0]] === n), svcRow, force) })
+  } else {
+    DISPLAY_ORDER.forEach(n => { const ci = n === 'Other Services' ? CATS.length : CATS.findIndex(c => c[0] === n), r = rows.filter(i => catOf(DATA.items[i]) === ci); if (r.length) h += grp('s:' + n, n, r, svcRow, force) })
+  }
+  return h
+}
+function svc() {
+  const ic = DATA.items.filter(x => x[5] === 'internal').length, ec = DATA.items.length - ic;
+  return '<div class="tabs"><button class="tab ' + (stp !== 'internal' ? 'on' : '') + '" data-a="stab" data-v="external">External Services <span class="n">' + ec + '</span></button><button class="tab ' + (stp === 'internal' ? 'on' : '') + '" data-a="stab" data-v="internal">Internal Services <span class="n">' + ic + '</span></button></div>' +
+    '<div class="toolbar"><input type="search" id="sq" placeholder="Search service title or office…" value="' + E(sq) + '"><select id="sd"><option value="all">All departments</option>' + DATA.depts.map((d, i) => '<option value="' + i + '"' + (sd == i && sd !== 'all' ? ' selected' : '') + '>' + E(d) + '</option>').join('') + '</select><button class="btn s" data-a="expand">Expand all</button><button class="btn" data-a="svcnew">+ Add service</button></div><div id="slist">' + svcList() + '</div>'
+}
+function pdfInfo(w) {
+  if (!w.pdf) return '<span class="nm">No PDF attached</span>';
+  if (!isB64(w.pdf)) return '<span class="nm">' + E(w.pdfName || 'document.pdf') + '</span><span class="sz">Published</span><button class="btn d sm" data-a="rmpdf" type="button">Remove PDF</button>';
+  const kb = Math.round(w.pdf.length * 0.75 / 1024);
+  return '<span class="nm">' + E(w.pdfName || 'document.pdf') + '</span><span class="sz">' + (kb >= 1024 ? (kb / 1024).toFixed(1) + ' MB' : kb + ' KB') + '</span><button class="btn d sm" data-a="rmpdf" type="button">Remove PDF</button>'
+}
+function svcForm() {
+  const w = W, isNew = w.dept === '__new';
+  return '<button class="back" data-a="svccancel" type="button">&larr; Back to services</button><div class="card panel" style="max-width:820px"><label class="fl" for="f-dept">Department / office</label><select class="in" id="f-dept">' + DATA.depts.map((d, i) => '<option value="' + i + '"' + (w.dept == i && !isNew ? ' selected' : '') + '>' + E(d) + '</option>').join('') + '<option value="__new"' + (isNew ? ' selected' : '') + '>+ New department…</option></select><input class="in" id="f-nd" placeholder="New department name" style="margin-top:10px" value="' + E(w.nd) + '"' + (isNew ? '' : ' hidden') + '>' +
+    '<label class="fl" for="f-title">Service title</label><textarea class="in" id="f-title" rows="2" style="min-height:0" placeholder="Type the service name as it should appear on the website">' + E2(w.title) + '</textarea><p class="hint">This is the name visitors will see on the website.</p>' +
+    '<label class="fl" for="f-kind">Service type</label><select class="in" id="f-kind"><option value="external"' + (w.kind !== 'internal' ? ' selected' : '') + '>External</option><option value="internal"' + (w.kind === 'internal' ? ' selected' : '') + '>Internal</option></select>' +
+    '<label class="fl">PDF document</label><div class="pdfbox"><div class="pdfrow" id="pdfinfo">' + pdfInfo(w) + '</div><input type="file" id="f-pdf" accept="application/pdf,.pdf"><p class="hint">When a PDF is attached, visitors see only the PDF on this service\'s page.</p></div>' +
+    '<div class="bar"><button class="btn" data-a="svcsave">Save service</button><button class="btn s" data-a="svccancel">Cancel</button></div></div>'
+}
+function wNew() { return {i: -1, dept: sd !== 'all' ? +sd : 0, nd: '', title: '', kind: stp === 'internal' ? 'internal' : 'external', pdf: '', pdfName: ''} }
+function wOf(i) { const x = DATA.items[i], d = DATA.det[i]; return {i, dept: x[0], nd: '', title: x[1], kind: x[5] === 'internal' ? 'internal' : 'external', pdf: d.pdf || '', pdfName: d.pdfName || ''} }
+function deptIndex(sel, name) {
+  if (sel !== '__new') return +sel;
+  name = name.trim(); const at = DATA.depts.findIndex(d => d.toLowerCase() === name.toLowerCase()); if (at >= 0) return at;
+  DATA.depts.push(name); return DATA.depts.length - 1
+}
+function saveSvc() {
+  const sel = $('#f-dept').value, title = $('#f-title').value.trim(), nd = $('#f-nd').value;
+  if (sel === '__new' && !nd.trim()) return toast('Please type the new department name');
+  if (!title) return toast('Please type the service title');
+  const di = deptIndex(sel, nd), kind = $('#f-kind').value, w = W, dn = DATA.depts[di];
+  if (w.i < 0) {
+    const item = [di, title, 0, '', '']; if (kind === 'internal') item.push('internal');
+    const det = {d: '', req: [], st: [], m: {'Office or Division': dn, 'Type of Transaction': '', 'Who may avail': '', 'Operating Hours': ''}, rm: '', tt: [], tf: []};
+    if (w.pdf) { det.pdf = w.pdf; det.pdfName = w.pdfName || 'document.pdf' }
+    DATA.items.push(item); DATA.det.push(det); logChange('Added service', title + (w.pdf ? ' (with PDF)' : ''))
+  } else {
+    const x = DATA.items[w.i], d = DATA.det[w.i], oldT = x[1], hadPdf = !!d.pdf, newPdf = isB64(w.pdf); x[0] = di; x[1] = title; x.length = 5; if (kind === 'internal') x[5] = 'internal';
+    d.m = Object.assign({}, d.m, {'Office or Division': dn});
+    if (w.pdf) { d.pdf = w.pdf; d.pdfName = w.pdfName || 'document.pdf' } else { delete d.pdf; delete d.pdfName }
+    logChange(newPdf ? 'Updated PDF of service' : hadPdf && !w.pdf ? 'Removed PDF of service' : 'Edited service', oldT !== title ? oldT.slice(0, 55) + '… → ' + title.slice(0, 55) : title)
+  }
+  W = null; touch(); toast('Service saved'); render()
+}
+function readPdf(file) {
+  if (!file) return;
+  if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name)) { toast('Please choose a PDF file'); $('#f-pdf').value = ''; return }
+  if (file.size > 12 * 1024 * 1024) { toast('That PDF is over 12 MB. Please compress it first.'); $('#f-pdf').value = ''; return }
+  const r = new FileReader();
+  r.onload = () => { W.pdf = String(r.result).split(',')[1] || ''; W.pdfName = file.name; $('#pdfinfo').innerHTML = pdfInfo(W); toast('PDF attached. Click "Save service" to keep it.') };
+  r.onerror = () => toast('Could not read that file'); r.readAsDataURL(file)
+}
+
+/* ---------- offices ---------- */
+function offList() {
+  const q = oq.trim().toLowerCase(), force = !!q || og !== 'all'; let h = '';
+  DATA.offices.forEach((g, gi) => {
+    if (og !== 'all' && +og !== gi) return;
+    const its = g.items.map((o, i) => [o, i]).filter(([o]) => !q || (o.n + ' ' + o.a + ' ' + o.em + ' ' + o.ph).toLowerCase().includes(q)); if (!its.length) return;
+    h += grp('o:' + g.t, g.t, its, ([o, i]) => '<div class="oitem"><div class="t"><b>' + E(o.n) + '</b><small>' + E(o.a) + '</small><small>' + [o.ph ? '☎ ' + E(o.ph) : '', o.em ? '✉ ' + E(o.em) : ''].filter(Boolean).join(' · ') + '</small></div><button class="btn s sm" data-a="offedit" data-g="' + gi + '" data-i="' + i + '">Edit</button><button class="btn d sm" data-a="offdel" data-g="' + gi + '" data-i="' + i + '">Delete</button></div>', force)
+  });
+  return h || '<div class="card empty">No offices match.</div>'
+}
+function off() {
+  return '<div class="toolbar"><input type="search" id="oq" placeholder="Search a branch, city or email…" value="' + E(oq) + '"><select id="og"><option value="all">All regions</option>' + REGIONS.map((t, i) => '<option value="' + i + '"' + (og !== 'all' && +og === i ? ' selected' : '') + '>' + E(t) + '</option>').join('') + '</select><button class="btn s" data-a="expand">Expand all</button><button class="btn" data-a="offnew">+ Add office</button></div><div id="olist">' + offList() + '</div>'
+}
+function offForm() {
+  const o = OW;
+  return '<button class="back" data-a="offcancel" type="button">&larr; Back to list of offices</button><div class="card panel" style="max-width:820px"><label class="fl" for="o-g">Region</label><select class="in" id="o-g">' + REGIONS.map((t, i) => '<option value="' + i + '"' + (o.g === i ? ' selected' : '') + '>' + E(t) + '</option>').join('') + '</select>' +
+    '<label class="fl" for="o-n">Office name</label><input class="in" id="o-n" value="' + E(o.n) + '" placeholder="e.g. Makati Branch"><label class="fl" for="o-a">Address</label><textarea class="in" id="o-a">' + E2(o.a) + '</textarea>' +
+    '<div class="row2"><div><label class="fl" for="o-p">Phone</label><input class="in" id="o-p" value="' + E(o.ph) + '" placeholder="+63 (02) 1234567"></div><div><label class="fl" for="o-e">Email</label><input class="in" id="o-e" value="' + E(o.em) + '" placeholder="branch@sss.gov.ph"></div></div>' +
+    '<div class="bar"><button class="btn" data-a="offsave">Save office</button><button class="btn s" data-a="offcancel">Cancel</button></div></div>'
+}
+function saveOff() {
+  const n = $('#o-n').value.trim(); if (!n) return toast('Please type the office name');
+  const gi = +$('#o-g').value, rec = {n, a: $('#o-a').value.trim(), ph: $('#o-p').value.trim(), em: $('#o-e').value.trim()}, o = OW;
+  if (o.i >= 0 && o.g === gi) DATA.offices[gi].items[o.i] = rec; else { if (o.i >= 0) DATA.offices[o.g].items.splice(o.i, 1); DATA.offices[gi].items.push(rec) }
+  logChange(o.i >= 0 ? 'Edited office' : 'Added office', n); DATA.offices[gi].items.sort(offSort);
+  OW = null; touch(); toast('Office saved'); render()
+}
+
+/* ---------- feedback ---------- */
+function fb() {
+  const f = DATA.fb; let n = 0;
+  return '<div class="card panel" style="margin-bottom:16px"><label class="fl" for="fb-t">Page heading</label><input class="in" id="fb-t" data-fb="title" value="' + E(f.title) + '"><label class="fl" for="fb-l">Intro text</label><textarea class="in" id="fb-l" data-fb="lead" style="min-height:70px">' + E2(f.lead) + '</textarea></div>' +
+    f.rows.map((r, ri) => r.map((c, ci) => { n++; return '<div class="card fbcard"><div class="top2"><span class="cnt">' + n + '</span><input class="in" data-fb="t" data-r="' + ri + '" data-c="' + ci + '" value="' + E(c.t) + '" placeholder="Card title"><button class="btn d sm" data-a="fbdel" data-r="' + ri + '" data-c="' + ci + '">Delete</button></div><textarea class="in" data-fb="x" data-r="' + ri + '" data-c="' + ci + '" style="min-height:130px">' + E2(c.x) + '</textarea></div>' }).join('')).join('') +
+    '<div class="bar" style="margin-top:6px"><button class="btn s" data-a="fbadd">+ Add card</button></div><p class="hint" style="margin-top:14px">Write each paragraph on its own line. Start a line with "- " to make a bullet. Put **double asterisks** around words to make them bold. Two cards in the same row show side by side.</p>'
+}
+
+/* ---------- settings ---------- */
+function set() {
+  return (OPEN ? '' : '<div class="card panel" style="max-width:720px;margin-bottom:16px"><h2>My account</h2><p>Signed in as <b>' + E(EMAIL) + '</b>.</p><label class="fl" for="npw">New password (at least 8 characters)</label><input class="in" id="npw" type="password" autocomplete="new-password"><div class="bar" style="margin-top:14px"><button class="btn" data-a="chpw">Change password</button></div></div>')  +
+    '<div class="card panel" style="max-width:720px"><h2>Discard my unpublished changes</h2><p>Removes the changes saved in this browser that are not published yet, and loads the live version again.</p><button class="btn d" data-a="reset">Discard my changes</button></div>'
+}
+async function importOld() {
+  const jf = $('#impJson').files[0], files = [...$('#impPdfs').files];
+  if (!jf) return toast('Choose data.json first');
+  let o; try { o = JSON.parse(await jf.text()) } catch (e) { return toast('That is not a valid data.json file') }
+  if (!validData(o)) return toast('That data.json does not look like the Citizen\'s Charter content');
+  const need = [...new Set(o.det.map(d => d.pdf).filter(p => p && !/^https?:\/\//i.test(p)))];
+  const byName = new Map(files.map(f => [f.name.toLowerCase(), f]));
+  const have = need.filter(p => byName.has(p.split('/').pop().toLowerCase()));
+  if (need.length && !files.length && !confirm('No pdfs folder was chosen, so the ' + need.length + ' PDFs will not be uploaded and services will be imported without them.\n\nContinue?')) return;
+  if (!confirm('Import ' + o.items.length + ' services, ' + have.length + ' of ' + need.length + ' PDFs, offices and feedback?\n\nThis REPLACES the published website and goes live now.')) return;
+  publishing = true; status(); const btn = $('#impBtn'); if (btn) btn.disabled = true;
+  try {
+    const urls = new Map(); let done = 0, q = have.slice();
+    const worker = async () => { while (q.length) { const p = q.shift(), f = byName.get(p.split('/').pop().toLowerCase()), d = o.det.find(x => x.pdf === p); urls.set(p, await uploadPdf(f, (d && d.pdfName) || f.name)); toast('Uploading PDFs… ' + (++done) + ' of ' + have.length) } };
+    await Promise.all([worker(), worker(), worker(), worker()]);
+    let missing = 0; o.det.forEach(d => { if (d.pdf && !/^https?:\/\//i.test(d.pdf)) { if (urls.has(d.pdf)) d.pdf = urls.get(d.pdf); else { missing++; delete d.pdf; delete d.pdfName } } });
+    DATA = {depts: o.depts, items: o.items, det: o.det, offices: o.offices, fb: o.fb}; DATA.offices = regroup(DATA.offices);
+    const res = await pushRow(true);
+    if (res !== 'ok') throw new Error(OPEN ? 'Publishing is not open yet. Run open-access.sql in Supabase.' : 'This account is not allowed to publish. Add your email to the admin list (setup.sql).');
+    dirty = false; staleNote = false; touch(false); toast('Import done' + (missing ? ' — ' + missing + ' services had no matching PDF file' : '') + '. The website is live.'); shell()
+  } catch (e) { if (e.message === AUTHERR) { toast('Session ended. Please sign in again.'); gate() } else toast(e.message || 'Import failed') }
+  publishing = false; status(); const b2 = $('#impBtn'); if (b2) b2.disabled = false
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  if (e.target.closest('#peye')) { const p = $('#pw'); p.type = p.type === 'password' ? 'text' : 'password'; return }
+  if (e.target.closest('#pgo')) return tryLogin();
+  if (e.target.closest('#out')) return signOut();
+  const g = e.target.closest('[data-go]'); if (g) return go(g.dataset.go);
+  const b = e.target.closest('[data-a]'); if (!b) return;
+  const a = b.dataset.a, i = +b.dataset.i, gi = +b.dataset.g;
+  if (a === 'publish') publish()
+  else if (a === 'chpw') changePw()
+  else if (a === 'import') importOld()
+  else if (a === 'svcnew') { W = wNew(); render() } else if (a === 'svcedit') { view = 'svc'; W = wOf(i); $$('.nav button').forEach(x => x.classList.toggle('on', x.dataset.go === 'svc')); render() }
+  else if (a === 'qsvc') { view = 'svc'; W = wNew(); $$('.nav button').forEach(x => x.classList.toggle('on', x.dataset.go === 'svc')); render() }
+  else if (a === 'qoff') { view = 'off'; OW = {g: 0, i: -1, n: '', a: '', ph: '', em: ''}; $$('.nav button').forEach(x => x.classList.toggle('on', x.dataset.go === 'off')); render() }
+  else if (a === 'svccancel') { W = null; render() } else if (a === 'svcsave') saveSvc()
+  else if (a === 'svcdel') two(b, 'Click again to delete', () => { logChange('Deleted service', DATA.items[i][1]); DATA.items.splice(i, 1); DATA.det.splice(i, 1); touch(); toast('Service deleted'); $('#slist').innerHTML = svcList(); counts() })
+  else if (a === 'stab') { stp = b.dataset.v; render() }
+  else if (a === 'expand') { const ds = $$('#page details.dep'), all = ds.length && ds.every(d => d.open); ds.forEach(d => { d.open = !all }); b.textContent = all ? 'Expand all' : 'Collapse all' }
+  else if (a === 'rmpdf') { W.pdf = ''; W.pdfName = ''; $('#pdfinfo').innerHTML = pdfInfo(W); $('#f-pdf').value = '' }
+  else if (a === 'dopen') { sd = String(i); stp = DATA.items.some(x => x[0] === i && x[5] !== 'internal') ? 'external' : 'internal'; sq = ''; lim = 60; go('svc') }
+  else if (a === 'dadd') { const n = (prompt('New department name:') || '').trim(); if (n) { if (DATA.depts.some(d => d.toLowerCase() === n.toLowerCase())) return toast('That department already exists'); DATA.depts.push(n); logChange('Added department', n); touch(); render() } }
+  else if (a === 'dren') { const old = DATA.depts[i], n = (prompt('Rename department:', old) || '').trim(); if (n && n !== old) { DATA.depts[i] = n; DATA.items.forEach((x, k) => { if (x[0] === i && DATA.det[k].m && DATA.det[k].m['Office or Division'] === old) DATA.det[k].m['Office or Division'] = n }); logChange('Renamed department', old + ' → ' + n); touch(); render() } }
+  else if (a === 'ddel') two(b, 'Click again to delete', () => { logChange('Deleted department', DATA.depts[i]); DATA.depts.splice(i, 1); DATA.items.forEach(x => { if (x[0] > i) x[0]-- }); sd = 'all'; touch(); toast('Department deleted'); render() })
+  else if (a === 'offnew') { OW = {g: og !== 'all' ? +og : 0, i: -1, n: '', a: '', ph: '', em: ''}; render() }
+  else if (a === 'offedit') { OW = Object.assign({g: gi, i}, DATA.offices[gi].items[i]); render() } else if (a === 'offcancel') { OW = null; render() } else if (a === 'offsave') saveOff()
+  else if (a === 'offdel') two(b, 'Click again to delete', () => { logChange('Deleted office', DATA.offices[gi].items[i].n); DATA.offices[gi].items.splice(i, 1); touch(); toast('Office deleted'); $('#olist').innerHTML = offList(); counts() })
+  else if (a === 'gadd') { const n = (prompt('Name of the new region / group:') || '').trim(); if (!n) return; const abroad = confirm('Is this group for offices ABROAD?\n\nOK = abroad   |   Cancel = Philippines'); DATA.offices.push({cat: abroad ? 'abroad' : 'local', t: n, items: []}); touch(); render() }
+  else if (a === 'gren') { const old = DATA.offices[gi].t, n = (prompt('Rename region / group:', old) || '').trim(); if (n && n !== old) { DATA.offices[gi].t = n; touch(); render() } }
+  else if (a === 'gdel') two(b, 'Click again to delete', () => { DATA.offices.splice(gi, 1); og = 'all'; touch(); render() })
+  else if (a === 'fbadd') { DATA.fb.rows.push([{t: 'New card', x: ''}]); logChange('Added Feedback card', ''); touch(); render() }
+  else if (a === 'fbdel') two(b, 'Click again to delete', () => { const r = +b.dataset.r, c = +b.dataset.c; DATA.fb.rows[r].splice(c, 1); DATA.fb.rows = DATA.fb.rows.filter(x => x.length); logChange('Deleted Feedback card', ''); touch(); render() })
+  else if (a === 'reset') two(b, 'Click again to discard', () => kvDel('work').then(() => location.reload()))
+});
+document.addEventListener('input', e => {
+  const t = e.target;
+  if (t.id === 'sq') { sq = t.value; lim = 60; $('#slist').innerHTML = svcList() } else if (t.id === 'oq') { oq = t.value; $('#olist').innerHTML = offList() }
+  else if (t.dataset && t.dataset.fb) { const f = DATA.fb, k = t.dataset.fb; if (k === 'title' || k === 'lead') f[k] = t.value; else f.rows[+t.dataset.r][+t.dataset.c][k] = t.value; logChange('Edited Feedback page', '', true); touch() }
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.id === 'sd') { sd = t.value; lim = 60; $('#slist').innerHTML = svcList() } else if (t.id === 'st') { stp = t.value; lim = 60; $('#slist').innerHTML = svcList() } else if (t.id === 'og') { og = t.value; $('#olist').innerHTML = offList() }
+  else if (t.id === 'f-dept') { $('#f-nd').hidden = t.value !== '__new'; if (t.value === '__new') $('#f-nd').focus() }
+  else if (t.id === 'f-pdf') readPdf(t.files[0])
+});
+document.addEventListener('toggle', e => {
+  const d = e.target; if (!d || !d.matches || !d.matches('details.dep') || !d.dataset.k) return;
+  if (d.dataset.k.startsWith('s:') ? (sq.trim() || sd !== 'all') : (oq.trim() || og !== 'all')) return;
+  if (d.open) openG.add(d.dataset.k); else openG.delete(d.dataset.k)
+}, true);
+document.addEventListener('keydown', e => { if (e.key === 'Enter' && (e.target.id === 'pw' || e.target.id === 'em')) tryLogin() });
+window.addEventListener('beforeunload', e => { if (AUTO && (dirty || syncing)) { e.preventDefault(); e.returnValue = '' } });
+boot()
+})();
+</script>
+</body></html>
